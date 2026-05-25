@@ -11,7 +11,7 @@
 </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Resources | TWANG</title>
+  <title>Resources & Alpha Waitlist | TWANG</title>
   <link rel="stylesheet" href="ProjectAssignment.css" />
 </head>
 <body>
@@ -33,77 +33,135 @@
   </header>
 
   <main class="resources-section">
-	<div class="content-container">
-    <h1>Resources & Applications</h1>
+    <div class="content-container">
+      <h1>Resources & Summer Alpha</h1>
+      <p class="contact-description">
+        TWANG is preparing for a limited Summer Alpha to explore how students, parents,
+        educators, and community partners can help shape a safer, more motivating student platform.
+      </p>
 
-    <div class="form-pair">
-      <section class="form-box resource-form">
-        <h2>Submit a Community Resource</h2>
-		<p>Parents, educators, and districts can submit helpful links, programs, or support services that may benefit students on TWANG.</p>
-        <form>
-          <label>Your Name:
-            <input type="text" required placeholder="Jane Doe">
-          </label>
-          <label>Email Address:
-            <input type="email" required placeholder="jane@example.com">
-          </label>
-          <label>Your Role:
-            <select required>
-              <option disabled selected>Select Role</option>
-              <option>Parent</option>
-              <option>Educator</option>
-              <option>District</option>
-              <option>Other</option>
-            </select>
-          </label>
-          <label>Resource Description:
-            <textarea rows="4" placeholder="Share helpful details..." required></textarea>
-          </label>
-          <label>Link to Resource:
-            <input type="url" placeholder="https://example.com" required>
-          </label>
-          <button type="submit">Submit Resource</button>
-        </form>
-      </section>
+      <div class="form-pair">
+        <section class="form-box resource-form">
+          <h2>Submit a Community Resource</h2>
+          <p>
+            Parents, educators, and community partners can recommend helpful links,
+            programs, events, scholarships, tutoring options, or support services that may benefit students.
+          </p>
 
-      <section class="form-box application-form">
-        <h2>Student Application</h2>
-        <form>
-          <label>First Name*:
-            <input type="text" required>
-          </label>
-          <label>Last Name*:
-            <input type="text" required>
-          </label>
-          <label>Email*:
-            <input type="email" required>
-          </label>
-          <label>School/District*:
-            <input type="text" required>
-          </label>
-          <label>Date of Birth*:
-            <input type="date" required>
-          </label>
-          <label>School Year*:
-            <input type="text" required>
-          </label>
-          <label>Address*:
-            <input type="text" required>
-          </label>
-          <label>Parent/Guardian Authorization*:
-            <input type="text" required>
-          </label>
-          <label>Interests/Hobbies:
-            <input type="text">
-          </label>
-          <button type="submit">Submit Application</button>
-        </form>
-      </section>
+          <form>
+            <label>Your Name:
+              <input type="text" required placeholder="Jane Doe">
+            </label>
+
+            <label>Email Address:
+              <input type="email" required placeholder="jane@example.com">
+            </label>
+
+            <label>Your Role:
+              <select required>
+                <option disabled selected>Select Role</option>
+                <option>Parent/Guardian</option>
+                <option>Student</option>
+                <option>Educator</option>
+                <option>District/School Representative</option>
+                <option>Community Partner</option>
+                <option>Other</option>
+              </select>
+            </label>
+
+            <label>Resource Type:
+              <select required>
+                <option disabled selected>Select Resource Type</option>
+                <option>Tutoring / Academic Support</option>
+                <option>Mental Health / Wellness</option>
+                <option>Scholarships / FAFSA / College Prep</option>
+                <option>Jobs / Internships</option>
+                <option>Community Service</option>
+                <option>Sports / Clubs / Youth Programs</option>
+                <option>Safety / Reporting Support</option>
+                <option>Other</option>
+              </select>
+            </label>
+
+            <label>Resource Description:
+              <textarea rows="4" placeholder="Share helpful details..." required></textarea>
+            </label>
+
+            <label>Link to Resource:
+              <input type="url" placeholder="https://example.com">
+            </label>
+
+            <button type="submit">Submit Resource</button>
+          </form>
+        </section>
+
+        <section class="form-box application-form">
+          <h2>Join the TWANG Summer Alpha Waitlist</h2>
+          <p>
+            Interested in testing TWANG or learning more? Join the early interest list.
+            Alpha access will be limited and reviewed for safety.
+          </p>
+
+          <form>
+            <label>I am a*:
+              <select required>
+                <option disabled selected>Select One</option>
+                <option>Student</option>
+                <option>Parent/Guardian</option>
+                <option>Educator</option>
+                <option>School/District Representative</option>
+                <option>Community Partner</option>
+              </select>
+            </label>
+
+            <label>First Name*:
+              <input type="text" required placeholder="First name">
+            </label>
+
+            <label>Last Name:
+              <input type="text" placeholder="Last name">
+            </label>
+
+            <label>Email*:
+              <input type="email" required placeholder="you@example.com">
+            </label>
+
+            <label>School/District or Community:
+              <input type="text" placeholder="School, district, city, or organization">
+            </label>
+
+            <label>Student Grade Level:
+              <select>
+                <option disabled selected>Select if applicable</option>
+                <option>6th Grade</option>
+                <option>7th Grade</option>
+                <option>8th Grade</option>
+                <option>9th Grade</option>
+                <option>10th Grade</option>
+                <option>11th Grade</option>
+                <option>12th Grade</option>
+                <option>Parent/Educator/Other</option>
+              </select>
+            </label>
+
+            <label>What interests you most about TWANG?
+              <textarea rows="4" placeholder="Study support, safe community, student highlights, resources, parent visibility, school partnerships, etc."></textarea>
+            </label>
+
+            <p class="contact-description">
+              By submitting interest, you understand TWANG is in early development
+              and participation may require parent/guardian review for students.
+            </p>
+
+            <button type="submit">Join Waitlist</button>
+          </form>
+        </section>
+      </div>
     </div>
   </main>
 
   <footer>
-    <p>&copy; 2025 TWANG. All rights reserved.</p>
+    <p>&copy; 2026 TWANG. All rights reserved.</p>
   </footer>
 </body>
 </html>
