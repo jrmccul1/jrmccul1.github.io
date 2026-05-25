@@ -18,7 +18,8 @@ header {
   flex-wrap: wrap;
 }
 .twang-logo {
-  width: 300px; 
+  width: 180px; 
+  max-width: 22vw
   height: auto;
 }
 .logo-title {
