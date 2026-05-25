@@ -568,3 +568,90 @@ p {
   max-width: 700px;
   font-size: 1.1em;
 }
+/* --- TWANG homepage layout repair --- */
+
+.overview {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  padding: 2em;
+  align-items: stretch;
+}
+
+.overview > div {
+  background-color: #29a1e6;
+  border-radius: 10px;
+  padding: 2em;
+}
+
+.left,
+.middle,
+.right {
+  min-height: 520px;
+}
+
+.left h1,
+.middle h2,
+.right h3 {
+  margin-bottom: 0.75em;
+}
+
+.teens-image {
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 2em auto 1em auto;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+  height: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7em;
+  margin-top: 0.5em;
+}
+
+.buttons button {
+  min-width: 190px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.video-container video,
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1000px) {
+  .overview {
+    grid-template-columns: 1fr;
+  }
+
+  .left,
+  .middle,
+  .right {
+    min-height: auto;
+  }
+}
