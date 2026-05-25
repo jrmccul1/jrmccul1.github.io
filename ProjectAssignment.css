@@ -655,3 +655,83 @@ p {
     min-height: auto;
   }
 }
+/* ================================
+   TWANG GLOBAL HEADER RESET
+   Forces every page header to match
+================================ */
+
+header {
+  width: 100%;
+  min-height: 300px;
+  padding: 2rem 3rem;
+  background-color: #29a1e6;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo-title {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.twang-logo {
+  width: 300px;
+  height: auto;
+  display: block;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  list-style: none;
+  margin-left: 0;
+  flex-wrap: nowrap;
+}
+
+.search-box {
+  width: 170px;
+  padding: 0.4em;
+  margin-left: 0;
+}
+
+.search-button {
+  background-color: #cd65ed;
+  border: none;
+  padding: 0.4em 0.6em;
+  cursor: pointer;
+}
+
+/* Keep header usable on smaller screens */
+@media (max-width: 900px) {
+  header {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .logo-title {
+    justify-content: center;
+  }
+
+  nav,
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
