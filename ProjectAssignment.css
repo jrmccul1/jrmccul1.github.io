@@ -655,3 +655,21 @@ p {
     min-height: auto;
   }
 }
+/* --- Lock shared header sizing across all pages --- */
+header {
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-title {
+  flex: 1 1 300px;
+  display: flex;
+  align-items: center;
+}
+
+.twang-logo {
+  width: 300px;
+  height: auto;
+  display: block;
+}
