@@ -15,7 +15,7 @@ header {
   align-items: center;
   padding: 1em 2em;
   background-color: #29a1e6;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .twang-logo {
   width: 300px; 
